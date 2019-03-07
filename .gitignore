@@ -1,0 +1,49 @@
+# NPM
+react-native-*.tgz
+package/
+
+# jest
+coverage
+
+# generated
+lib/
+
+# OSX
+#
+.DS_Store
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+react-native-share-pdf-*.tgz
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+
+# Android
+#
+build/
+.gradle
+.idea
+local.properties
+*.iml

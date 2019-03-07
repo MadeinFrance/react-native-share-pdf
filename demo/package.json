@@ -1,0 +1,29 @@
+{
+  "name": "Base64PDFShareDemo",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "keywords": [
+    "react-native base64 share pdf example"
+  ],
+  "author": "Maxime Gerbe <maxime.gerbe@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "16.6.3",
+    "react-native": "0.58.3",
+    "react-native-share-pdf": "../react-native-share-pdf-0.0.1.tgz"
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "24.0.0",
+    "jest": "24.0.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-test-renderer": "16.6.3",
+    "react-native-share-pdf": "^0.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
