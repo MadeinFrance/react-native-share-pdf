@@ -1,5 +1,5 @@
 
-# react-native-base64-share-pdf
+# react-native-share-pdf
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3a793d6ce3894ea490cddd4c78fadc1a)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MadeinFrance/react-native-share-base64-pdf&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/MadeinFrance/react-native-share-pdf/branch/master/graph/badge.svg?token=zRjKYpheMI)](https://codecov.io/gh/MadeinFrance/react-native-share-pdf)
