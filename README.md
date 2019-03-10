@@ -1,6 +1,7 @@
 
 # react-native-base64-share-pdf
 
+[![npm version](https://badge.fury.io/js/react-native-share-pdf.svg)](https://badge.fury.io/js/react-native-share-pdf)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3a793d6ce3894ea490cddd4c78fadc1a)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MadeinFrance/react-native-share-base64-pdf&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/MadeinFrance/react-native-share-pdf/branch/master/graph/badge.svg?token=zRjKYpheMI)](https://codecov.io/gh/MadeinFrance/react-native-share-pdf)
 [![CircleCI](https://circleci.com/gh/MadeinFrance/react-native-share-pdf/tree/master.svg?style=shield)](https://circleci.com/gh/MadeinFrance/react-native-share-base64-pdf/)
@@ -11,6 +12,12 @@ Android Library for saving and sharing a base64 encoded PDF.
 ## Motivation
 ****
 Sharing a base64 PDF works on iOS with the React Native API but it's not working for Android. The `ShareFile` JAVA module shows that's possible by saving the document on local storage of the device and sharing it.
+
+## Install
+
+```shell
+npm i react-native-share-pdf
+```
 
 ## Usage
 
