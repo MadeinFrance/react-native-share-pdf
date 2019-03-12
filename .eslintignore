@@ -2,3 +2,4 @@ demo/**/*
 lib/**/*
 flow-typed/**/*
 preprocessor.js
+mockData.js
