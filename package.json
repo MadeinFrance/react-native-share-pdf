@@ -12,10 +12,9 @@
     "flow": "flow"
   },
   "files": [
-    "/lib",
-    "/android/src/**/*.java",
-    "/android/src/**/*.xml",
-    "/src/utils/**/*.js"
+    "lib",
+    "android",
+    "src/utils/**/*.js"
   ],
   "keywords": [
     "react-native base64 share pdf"
