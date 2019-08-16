@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.content.FileProvider;
 import android.util.Base64;
+import android.app.Activity;
 
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -77,8 +78,10 @@ public class ShareFile extends ReactContextBaseJavaModule {
     Intent intentShareFile = new Intent(Intent.ACTION_SEND);
     intentShareFile.setType(TYPE_PDF);
     intentShareFile.putExtra(Intent.EXTRA_STREAM, outputFileUri);
-
-    reactContext.startActivity(Intent.createChooser(intentShareFile, ""));
+    intentShareFile.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    
+    Activity currentActivity = getCurrentActivity();
+    currentActivity.startActivity(Intent.createChooser(intentShareFile, ""));
   }
 
   @Override
