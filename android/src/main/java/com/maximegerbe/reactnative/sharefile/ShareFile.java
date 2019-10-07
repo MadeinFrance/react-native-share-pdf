@@ -76,9 +76,10 @@ public class ShareFile extends ReactContextBaseJavaModule {
 
     Intent intentShareFile = new Intent(Intent.ACTION_SEND);
     intentShareFile.setType(TYPE_PDF);
+    intentShareFile.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     intentShareFile.putExtra(Intent.EXTRA_STREAM, outputFileUri);
 
-    reactContext.startActivity(Intent.createChooser(intentShareFile, ""));
+    reactContext.startActivity(intentShareFile);
   }
 
   @Override
