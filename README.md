@@ -43,7 +43,9 @@ async function loadAndSharePDF() {
 
 * RNShareFile.share(base64Data, documentFileName);
 
-### Installation
+### Manual Installation
+
+React Native > 0.60 will autolink. For earlier versions:
 
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
   - Add `import com.maximegerbe.reactnative.sharefile.ShareFilePackage;` to the imports at the top of the file
