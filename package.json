@@ -1,6 +1,6 @@
 {
   "name": "react-native-share-pdf",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React native share PDF base64",
   "main": "src/index.js",
   "scripts": {
@@ -12,10 +12,11 @@
     "flow": "flow"
   },
   "files": [
-    "/lib",
+    "lib",
+    "android",
     "/android/src/**/*.java",
     "/android/src/**/*.xml",
-    "/src/utils/**/*.js"
+    "src/utils/**/*.js"
   ],
   "keywords": [
     "react-native base64 share pdf"
