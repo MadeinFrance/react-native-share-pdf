@@ -73,7 +73,7 @@ public class ShareFile extends ReactContextBaseJavaModule {
   }
 
   private void shareFile(File file) {
-    Uri outputFileUri = FileProvider.getUriForFile(reactContext, "com.maximegerbe.reactnative.sharefile.provider", file);
+    Uri outputFileUri = FileProvider.getUriForFile(reactContext, reactContext.getPackageName() + ".provider", file);
 
     Intent intentShareFile = new Intent(Intent.ACTION_SEND);
     intentShareFile.setType(TYPE_PDF);
