@@ -13,7 +13,7 @@
   "dependencies": {
     "react": "16.6.3",
     "react-native": "0.58.3",
-    "react-native-share-pdf": "../react-native-share-pdf-0.0.5.tgz"
+    "react-native-share-pdf": "../react-native-share-pdf-0.0.6.tgz"
   },
   "devDependencies": {
     "babel-core": "^7.0.0-bridge.0",
