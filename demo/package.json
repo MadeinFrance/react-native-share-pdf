@@ -11,7 +11,7 @@
   "author": "Maxime Gerbe <maxime.gerbe@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "react": "16.6.3",
+    "react": "16.14.0",
     "react-native": "0.58.3",
     "react-native-share-pdf": "../react-native-share-pdf-0.0.6.tgz"
   },
