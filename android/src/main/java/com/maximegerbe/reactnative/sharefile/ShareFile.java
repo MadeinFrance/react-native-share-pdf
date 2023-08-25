@@ -8,7 +8,7 @@ package com.maximegerbe.reactnative.sharefile;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v4.content.FileProvider;
+import androidx.core.content.FileProvider;
 import android.util.Base64;
 import android.app.Activity;
 
@@ -80,7 +80,7 @@ public class ShareFile extends ReactContextBaseJavaModule {
     intentShareFile.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
     intentShareFile.putExtra(Intent.EXTRA_STREAM, outputFileUri);
     intentShareFile.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-    
+
     Activity currentActivity = getCurrentActivity();
     currentActivity.startActivity(Intent.createChooser(intentShareFile, ""));
   }
