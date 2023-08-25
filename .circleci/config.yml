@@ -2,12 +2,12 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:11.10.1
+      - image: circleci/node:16.13.0
     steps:
       - checkout
       - run: yarn install
       - run: yarn lint
-      - run: yarn flow
+      - run: yarn check-types
       - run: yarn test
       - run: yarn test --coverage
       - run: yarn test-coverage-report -t 9f251d4c-7f8a-41cf-a469-8fa096d58584

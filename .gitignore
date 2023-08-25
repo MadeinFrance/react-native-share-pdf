@@ -47,3 +47,6 @@ build/
 .idea
 local.properties
 *.iml
+
+# generated
+/lib/

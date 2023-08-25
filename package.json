@@ -1,22 +1,24 @@
 {
   "name": "react-native-share-pdf",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "React native share PDF base64",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "prepublish": "./utils/deploy.sh",
+    "prepare": "npm run build",
+    "prepack": "npm run build",
     "test": "jest",
     "test-coverage": "jest --coverage",
     "test-coverage-report": "codecov",
-    "lint": "eslint src/*",
-    "flow": "flow"
+    "lint": "eslint --ext .js --ext .ts --ext .tsx ./src/",
+    "check-types": "./node_modules/.bin/tsc --noEmit",
+    "build": "./node_modules/.bin/tsc"
   },
   "files": [
     "lib",
     "android",
     "/android/src/**/*.java",
     "/android/src/**/*.xml",
-    "src/utils/**/*.js"
+    "src/index.tsx"
   ],
   "keywords": [
     "react-native base64 share pdf"
@@ -24,26 +26,31 @@
   "author": "Maxime Gerbe <maxime.gerbe@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "react": "16.*",
+    "react": "18.*",
     "react-native": "0.*"
   },
   "devDependencies": {
+    "@jest/globals": "^29.6.3",
+    "@types/jest": "^29.5.4",
+    "@types/react-native": "^0.64.6",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
-    "codecov": "^3.0.0",
     "babel-preset-react-native": "^5",
-    "eslint": "^5.9.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1",
-    "flow-bin": "^0.78.0",
-    "flow-remove-types": "^1.2.3",
-    "flow-typed": "^2.5.1",
-    "jest": "^23.6.0",
-    "react": "^16.2.0",
-    "react-native": "^0.57.5",
-    "react-test-renderer": "^16.6.1"
+    "codecov": "^3.0.0",
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "jest": "^28.1.3",
+    "react": "17.0.1",
+    "react-native": "0.64.1",
+    "react-test-renderer": "17.0.1",
+    "ts-jest": "^28.0.6",
+    "typescript": "^4.2.4"
   },
   "dependencies": {},
   "repository": {
