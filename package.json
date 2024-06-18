@@ -26,7 +26,7 @@
   "author": "Maxime Gerbe <maxime.gerbe@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "react": "18.*",
+    "react": "*",
     "react-native": "0.*"
   },
   "devDependencies": {
