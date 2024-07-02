@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.72.4",
+    "react-native": "0.73.0",
     "react-native-share-pdf": "../react-native-share-pdf-v0.0.6.tgz"
   },
   "devDependencies": {
